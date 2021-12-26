@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  background-color: yellow;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+  color: blue;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.Developer{
+  background-color: blueviolet;
+  border: 1px solid black;
+  width: 100%;
+  height: 80%;
+  top: 70px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Developer img {
+  width: 30%;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Developer i {
+  font-size: 25px;
+}
+
+.Developer a {
+  text-decoration: none;
+  color: #c0392b;
+}
+.Developer a:hover {
+  color: cyan;
+}
+
+#ChristmasContent, .Title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutChrist p {
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+ }
+ h1 {
+  text-align: center;
+}
+
+.Purpose1 {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Purpose {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.Purpose.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Purpose.active::before,
+.Purpose.active::after {
+  content: '\f075';
+  font-family: 'Font Awesome 5 Free';
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.Purpose.active::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+
+.Purpose-Title {
+  margin: 0 35px 0 0;
+}
+
+.purpose-Text {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.Purpose.active .purpose-Text {
+  display: block;
+}
+
+.Toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.Toggle:focus {
+  outline: 0;
+}
+
+.Toggle .fa-times {
+  display: none;
+}
+
+.Purpose.active.active .Toggle .fa-times {
+  color: #fff;
+  display: block;
+}
+
+.Purpose.active .Toggle .fa-chevron-down {
+  display: none;
+}
+
+.Purpose.active .Toggle {
+  background-color: #9fa4a8;
+}
+
+.Aboutme {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.Aboutme p{
+padding-bottom: 20px;
+}
+
+.Aboutme a {
+  padding-bottom: 6px;
+}
